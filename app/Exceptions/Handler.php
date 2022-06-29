@@ -37,5 +37,16 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+        
+        $this->renderable(function (HttpException $e, $request) {
+            if ($e->getStatusCode() == 401) {
+                if ($request->is('api/*')) {
+                    return response()->json([
+                        'error' => true,
+                        'message' => 'Session telah berakhir.'
+                    ], 401);
+                }
+            }
+        }); 
     }
 }

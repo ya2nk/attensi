@@ -5,10 +5,11 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Auth;
 
 class AuthController extends Controller
 {
-    function login(Request $req)
+    function login(Request $request)
     {
         if (!Auth::attempt($request->only('email', 'password')))
         {
