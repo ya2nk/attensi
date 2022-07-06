@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ { AuthController,DashboardController };
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/login',[AuthController::class,"loginView"]);
+Route::post('/login',[AuthController::class,"login"]);
+
+Route::middleware(['auth'])->group(function(){
+    Route::get('/dashboard',[DashboardController::class,"index"]);
 });
