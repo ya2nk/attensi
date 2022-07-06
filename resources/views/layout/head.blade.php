@@ -23,10 +23,11 @@
 	
 	<!-- bootstrap-daterangepicker -->
 	<link href="{{ asset('assets/vendors/bootstrap-daterangepicker/daterangepicker.css') }}" rel="stylesheet">
-	<!-- bootstrap-datetimepicker -->
-    <link href="{{asset('assets/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css') }}" rel="stylesheet">
+	
 	<!-- Custom Theme Style -->
 	<link href="{{ asset('assets/build/css/custom.min.css') }}" rel="stylesheet">
+	<!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="{{ asset('assets/vendors/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.css') }}">
 	<!-- jQuery -->
 	<script src="{{ asset('assets/vendors/jquery/dist/jquery.min.js') }}"></script>
 </head>

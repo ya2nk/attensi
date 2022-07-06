@@ -19,10 +19,11 @@
 <script src="{{ asset('assets/vendors/DateJS/build/date.js') }}"></script>
 
 <!-- bootstrap-daterangepicker -->
-<script src="{{ asset('assets/vendors/moment/min/moment.min.js') }}"></script>
+<script src="{{ asset('assets/vendors/moment/moment.min.js') }}"></script>
 <script src="{{ asset('assets/vendors/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
 <!-- bootstrap-datetimepicker -->    
-<script src="{{ asset('assets/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') }}"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="{{ asset('assets/vendors/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.js') }}"></script>
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('assets/build/js/custom.min.js') }}"></script>
 <script src="{{ asset('assets/js/alpine-extends.js') }}" defer></script>
@@ -53,8 +54,12 @@
 	});
 	
 	var datetimepickerOptions =  {
+		buttons: {
+			showClose:true
+		},
 		format: 'YYYY-MM-DD',
 		ignoreReadonly: true,
+		readonly:true
 	};
 </script>
 @stack('scripts')
