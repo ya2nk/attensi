@@ -28,6 +28,15 @@
 	<link href="{{ asset('assets/build/css/custom.min.css') }}" rel="stylesheet">
 	<!-- Tempusdominus Bbootstrap 4 -->
     <link rel="stylesheet" href="{{ asset('assets/vendors/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.css') }}">
+	<!-- Select2 -->
+	<link href="{{ asset('assets/vendors/select2/dist/css/select2.min.css') }}" rel="stylesheet">
+	<!-- PNotify -->
+    <link href="{{ asset('assets/vendors/pnotify/dist/pnotify.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
 	<!-- jQuery -->
 	<script src="{{ asset('assets/vendors/jquery/dist/jquery.min.js') }}"></script>
 </head>

@@ -31,7 +31,7 @@
                     <li>
                         <a><i class="fa fa-folder"></i> Master <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="form.html">Master Pegawai</a></li>
+                            <li><a href="{{ url('pegawai') }}">Master Pegawai</a></li>
                             <li><a href="form_advanced.html">Master Jam Kerja</a></li>
                             <li><a href="form_validation.html">Master Lokasi</a></li>
                         </ul>

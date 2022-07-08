@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ { AuthController,DashboardController };
+use App\Http\Controllers\ { AuthController,DashboardController,PegawaiController };
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +23,5 @@ Route::post('/login',[AuthController::class,"login"]);
 
 Route::middleware(['auth'])->group(function(){
     Route::get('/dashboard',[DashboardController::class,"index"]);
+    Route::resource('/pegawai',PegawaiController::class);
 });

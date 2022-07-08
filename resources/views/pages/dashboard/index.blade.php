@@ -53,4 +53,12 @@
 	<div class="animated flipInY col-lg-3 col-md-3 col-sm-6  ">
 		<x-datepicker id="tgl" name="tgl"/>
 	</div>
+	<div class="animated flipInY col-lg-3 col-md-3 col-sm-6  ">
+		<button class="btn btn-secondary source" onclick="notify('ini message','info')">Success</button>
+	</div>
+	<div class="animated flipInY col-lg-3 col-md-3 col-sm-6  ">
+		<select class="form-control select2">
+			<option>Test</option>
+		</select>
+	</div>
 @endsection
